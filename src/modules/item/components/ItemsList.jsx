@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { ListGroup, ListGroupItem } from 'reactstrap';
 import { fetchItems } from '../redux/actions';
 
 class ItemsList extends Component {
@@ -10,11 +11,11 @@ class ItemsList extends Component {
   render() {
     const { items } = this.props;
     return !items.length ? null : (
-      <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
+      <ListGroup>
+        {items.map(item => (
+          <ListGroupItem key={item.id}>{item.name}</ListGroupItem>
         ))}
-      </ul>
+      </ListGroup>
     );
   }
 }

@@ -9,6 +9,7 @@ export const Items = () => {
   return (
     <div>
       <ItemAdd />
+      <br />
       <ItemsList />
     </div>
   );

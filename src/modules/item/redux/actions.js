@@ -1,10 +1,14 @@
 import { ADD_ITEM, FETCH_ITEMS } from './types';
+import { Item } from '../model/item';
+// generating items id
+import cuid from 'cuid';
 
 // add item action
 export const addItem = item => async dispatch => {
+  const itemId = cuid();
   dispatch({
     type: ADD_ITEM,
-    payload: item
+    payload: Item(itemId, item)
   });
 };
 

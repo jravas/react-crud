@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import { Container, Row, Col } from 'reactstrap';
 
 // react router routes component
 import { Routes } from './main/components/Routes';
@@ -12,7 +13,10 @@ const App = () => {
     <BrowserRouter>
       <div>
         <Navigation />
-        <Routes />
+        <br />
+        <Container>
+          <Routes />
+        </Container>
       </div>
     </BrowserRouter>
   );
