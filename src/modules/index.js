@@ -1,4 +1,4 @@
-import { Items } from './item';
+import { Items, ItemSingle } from './item';
 import { Navigation } from './navigation';
 
-export { Items, Navigation };
+export { Items, ItemSingle, Navigation };

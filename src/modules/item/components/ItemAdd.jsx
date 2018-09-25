@@ -14,9 +14,12 @@ class ItemAdd extends Component {
   itemSubmit = () => {
     const { item } = this.state;
     const { addItem } = this.props;
-    addItem(item);
-    // clear input
-    this.setState({ item: '' });
+    if (item.length) {
+      // add item
+      addItem(item);
+      // clear input
+      this.setState({ item: '' });
+    }
   };
 
   render() {

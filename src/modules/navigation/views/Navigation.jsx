@@ -35,7 +35,7 @@ export class Navigation extends Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="dark" dark expand="md">
           <NavbarBrand tag={Link} to={HOME}>
             reactstrap
           </NavbarBrand>
